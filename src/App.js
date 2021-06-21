@@ -1,24 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import styled from 'styled-components';
+import Acordeon from './component/Acordeon';
+
+const Container = styled.main`
+
+  width: 100vw;
+  height: 100vh;
+  background: rgb(13,228,126);
+  background: linear-gradient(45deg, rgba(13,228,126,1) 0%, rgba(0,149,255,1) 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+`;
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Container>
+      <Acordeon/>
+    </Container>
   );
 }
 
